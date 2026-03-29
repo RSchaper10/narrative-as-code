@@ -15,8 +15,15 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Install validation dependency
-        run: python3 -m pip install -r requirements-dev.txt
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y jq zsh pandoc
+
+      - name: Install Python dependencies
+        run: |
+          python3 -m pip install -r requirements-dev.txt
+          python3 -m pip install -r requirements-docx.txt
 
       - name: Run setup check
         run: python3 scripts/check-setup.py
