@@ -1,0 +1,45 @@
+{
+  "title": "Signal Harbor",
+  "slug": "signal-harbor",
+  "word_count": 1210,
+  "target_word_count": 12000,
+  "progress_percent": 10.1,
+  "chapters": [
+    {
+      "file": "00-prologue.md",
+      "slug": "00-prologue",
+      "title": "Prologue",
+      "pov": "Third-person limited, Mara Vale",
+      "status": "sample-draft",
+      "summary": "Mara receives the notebook that points to a sealed tide station under Signal Harbor.",
+      "word_count": 250
+    },
+    {
+      "file": "01-first-sounding.md",
+      "slug": "01-first-sounding",
+      "title": "Chapter 1: First Sounding",
+      "pov": "Mara Vale",
+      "status": "sample-draft",
+      "summary": "Mara confirms the notebook references a real maintenance corridor below the bluff.",
+      "word_count": 260
+    },
+    {
+      "file": "02-pressure-line.md",
+      "slug": "02-pressure-line",
+      "title": "Chapter 2: Pressure Line",
+      "pov": "Ivo Mercer",
+      "status": "sample-draft",
+      "summary": "Diver Ivo Mercer joins the search and realizes the harbor siren network is still carrying hidden traffic.",
+      "word_count": 310
+    },
+    {
+      "file": "03-blue-room.md",
+      "slug": "03-blue-room",
+      "title": "Chapter 3: Blue Room",
+      "pov": "Mara Vale / Ivo Mercer",
+      "status": "sample-draft",
+      "summary": "The team reaches the blue-walled chamber and learns the archive was built to filter dangerous signals, not preserve history.",
+      "word_count": 299
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "project": {
+    "title": "Signal Harbor",
+    "slug": "signal-harbor",
+    "status": "starter-sample",
+    "draft_label": "Starter sample draft",
+    "target_word_count": 12000
+  },
+  "generated_at_utc": "2026-03-29T04:17:19.990513+00:00",
+  "word_count": 1210,
+  "progress_percent": 10.1,
+  "chapter_count": 4,
+  "chapter_status_breakdown": {
+    "sample-draft": 4
+  },
+  "chapter_pov_breakdown": {
+    "Ivo Mercer": 1,
+    "Mara Vale": 1,
+    "Mara Vale / Ivo Mercer": 1,
+    "Third-person limited, Mara Vale": 1
+  },
+  "chapter_word_counts": [
+    {
+      "slug": "00-prologue",
+      "title": "Prologue",
+      "word_count": 250
+    },
+    {
+      "slug": "01-first-sounding",
+      "title": "Chapter 1: First Sounding",
+      "word_count": 260
+    },
+    {
+      "slug": "02-pressure-line",
+      "title": "Chapter 2: Pressure Line",
+      "word_count": 310
+    },
+    {
+      "slug": "03-blue-room",
+      "title": "Chapter 3: Blue Room",
+      "word_count": 299
+    }
+  ],
+  "longest_chapter": {
+    "slug": "02-pressure-line",
+    "title": "Chapter 2: Pressure Line",
+    "word_count": 310
+  },
+  "shortest_chapter": {
+    "slug": "00-prologue",
+    "title": "Prologue",
+    "word_count": 250
+  },
+  "support_material": {
+    "canon_docs": 6,
+    "research_docs": 1,
+    "audio_docs": 4,
+    "editor_review_docs": 3,
+    "open_question_count": 3
+  },
+  "continuity_summary": {
+    "known_terms": 17,
+    "bridges": 5,
+    "potential_new_proper_nouns": 0
+  },
+  "artifacts": [
+    "build/signal-harbor-draft.md",
+    "build/signal-harbor-draft.epub",
+    "build/signal-harbor-print-source.docx",
+    "build/manuscript-stats.json",
+    "build/continuity-report.json",
+    "build/continuity-report.md",
+    "build/project-report.json",
+    "build/project-report.md"
+  ]
+}

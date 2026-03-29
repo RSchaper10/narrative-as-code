@@ -1,0 +1,27 @@
+{
+  "title": "Signal Harbor",
+  "slug": "signal-harbor",
+  "subtitle": "A Tiny Fiction Sample for Narrative-as-Code",
+  "status": "starter-sample",
+  "draft_label": "Starter sample draft",
+  "target_word_count": 12000,
+  "primary_build_outputs": [
+    "build/signal-harbor-draft.md",
+    "build/signal-harbor-draft.epub",
+    "build/signal-harbor-print-source.docx",
+    "build/manuscript-stats.json",
+    "build/continuity-report.json",
+    "build/continuity-report.md",
+    "build/project-report.json",
+    "build/project-report.md"
+  ],
+  "source_of_truth": [
+    "manuscript/",
+    "canon/",
+    "metadata/",
+    "research/",
+    "strategy/",
+    "audio/",
+    "editor-review/"
+  ]
+}

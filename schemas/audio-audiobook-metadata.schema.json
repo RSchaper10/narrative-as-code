@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Audiobook Metadata",
+  "type": "object",
+  "required": [
+    "title",
+    "edition",
+    "narration_recommendation",
+    "tone"
+  ],
+  "properties": {
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "edition": {
+      "type": "string",
+      "minLength": 1
+    },
+    "narration_recommendation": {
+      "type": "string",
+      "minLength": 1
+    },
+    "tone": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "additionalProperties": true
+}

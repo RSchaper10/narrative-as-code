@@ -1,0 +1,35 @@
+[
+  {
+    "order": 0,
+    "slug": "00-prologue",
+    "title": "Prologue",
+    "pov": "Third-person limited, Mara Vale",
+    "status": "sample-draft",
+    "summary": "Mara receives the notebook that points to a sealed tide station under Signal Harbor."
+  },
+  {
+    "order": 1,
+    "slug": "01-first-sounding",
+    "title": "Chapter 1: First Sounding",
+    "pov": "Mara Vale",
+    "status": "sample-draft",
+    "summary": "Mara confirms the notebook references a real maintenance corridor below the bluff."
+  },
+  {
+    "order": 2,
+    "slug": "02-pressure-line",
+    "title": "Chapter 2: Pressure Line",
+    "pov": "Ivo Mercer",
+    "status": "sample-draft",
+    "summary": "Diver Ivo Mercer joins the search and realizes the harbor siren network is still carrying hidden traffic."
+  },
+  {
+    "order": 3,
+    "slug": "03-blue-room",
+    "title": "Chapter 3: Blue Room",
+    "pov": "Mara Vale / Ivo Mercer",
+    "status": "sample-draft",
+    "summary": "The team reaches the blue-walled chamber and learns the archive was built to filter dangerous signals, not preserve history."
+  }
+]
+
