@@ -72,18 +72,37 @@ It is that chapters, canon, metadata, research, and production support live in s
 - `templates/` gives you reusable starting points
 - `docs/` contains demo and adoption guidance
 
+## Codex + VS Code
+
+This starter is designed to work especially well with `VS Code` and `Codex`.
+
+- `VS Code` gives you fast file navigation, Markdown editing, search, and diff review
+- `Codex` becomes useful because the repository is already structured into prose, canon, metadata, research, and production assets
+- the human stays in charge of meaning and taste while Codex handles more of the retrieval, structure, continuity, and packaging work
+
+For the deeper workflow, see `docs/codex-vscode-workflow.md`.
+
 ## Architecture
 
 ```mermaid
 flowchart LR
-    M[manuscript] --> B[scripts/build-manuscript.sh]
-    C[canon] --> A[agent + human workflow]
-    R[research] --> A
-    S[strategy] --> A
-    D[metadata] --> A
-    P[playbooks] --> A
-    A --> M
-    D --> B
+    V[VS Code workspace] --> H[human-led workflow]
+    X[Codex collaborator] --> H
+    M[manuscript] --> H
+    C[canon] --> H
+    R[research] --> H
+    S[strategy] --> H
+    D[metadata] --> H
+    AU[audio]
+    E[editor-review]
+    P[playbooks] --> X
+    H --> M
+    H --> C
+    H --> D
+    H --> AU
+    H --> E
+    D --> B[scripts/build-manuscript.sh]
+    M --> B
     B --> O[artifacts + reports]
 ```
 
@@ -93,27 +112,28 @@ flowchart LR
 2. Open it in VS Code or your preferred editor.
 3. Review `metadata/project.json` and `metadata/chapters.json`.
 4. Read the sample in `manuscript/` and `canon/`.
-5. Check local dependencies:
+5. Open the repo structure in the VS Code Explorer and keep the relevant canon and metadata files visible beside the active chapter.
+6. Check local dependencies:
 
 ```sh
 python3 scripts/check-setup.py
 ```
 
-6. Validate the sample:
+7. Validate the sample:
 
 ```sh
 python3 scripts/validate-project.py
 ```
 
-7. Build the sample manuscript and reports:
+8. Build the sample manuscript and reports:
 
 ```sh
 ./scripts/build-manuscript.sh
 ```
 
-8. Open the generated artifacts in `build/`.
-9. Review one playbook in `playbooks/`.
-10. Replace the sample project or import your own draft.
+9. Open the generated artifacts in `build/`.
+10. Review one playbook in `playbooks/` and the Codex workflow notes in `docs/codex-vscode-workflow.md`.
+11. Replace the sample project or import your own draft.
 
 Optional dependencies:
 
@@ -159,6 +179,29 @@ These reports are useful for:
 - continuity bridge coverage
 - open-question tracking
 - review handoff preparation
+
+## How Codex Fits Into The Asset Model
+
+Think about the repo in layers:
+
+- the manuscript is the reader-facing product
+- canon is the source of truth
+- research is the evidence base
+- metadata is the control surface
+- strategy is the revision and operating layer
+- audio and editor-review files are downstream production assets
+- scripts and playbooks define repeatable operations
+
+Codex is most effective when it can work across those layers inside the repo instead of relying on a giant hand-written prompt each time.
+
+Good uses for Codex here:
+
+- canon-anchored chapter review
+- continuity checking against open questions and bridges
+- research-to-scene synthesis
+- metadata maintenance after revisions
+- editor packet and audiobook prep support
+- build, validation, and reporting help
 
 ## Recommended Workflow
 
@@ -234,6 +277,7 @@ Available now in this repo:
 ## Demo Path
 
 If you want to show this to collaborators, use `docs/demo-walkthrough.md` for a tight 3-5 minute walkthrough.
+If you want the deeper VS Code + Codex collaboration model, use `docs/codex-vscode-workflow.md`.
 
 If you want launch artwork instead of a screenshot, start with `docs/launch-art-prompt.md`.
 
