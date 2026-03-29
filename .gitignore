@@ -6,3 +6,14 @@
 *.swo
 scripts/__pycache__/
 
+# Generated artifacts
+build/*
+!build/README.md
+
+# Private or company-specific notes
+docs/services.md
+docs/hosted-product-spec.md
+docs/github-launch-checklist.md
+docs/linkedin-launch-post.md
+.private/
+internal/

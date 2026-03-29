@@ -14,7 +14,7 @@ Use this sequence for a tight 3-5 minute demo of the starter.
    - `build/continuity-report.md`
    - `build/project-report.md`
 7. Show one playbook in `playbooks/`.
-8. Close by pointing to the hosted product spec as future direction, not current functionality.
+8. Close by pointing to the extension points in `scripts/`, `playbooks/`, and `templates/`.
 
 ## What To Emphasize
 

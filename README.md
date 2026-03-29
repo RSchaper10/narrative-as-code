@@ -2,7 +2,7 @@
 
 An open-source, local-first starter for authors, editors, and narrative teams who want a cleaner way to run a manuscript as a structured system instead of a single fragile document.
 
-Built by CloudRaven Labs, this repo demonstrates a practical pattern for chapter-scoped writing, canon grounding, metadata hygiene, review packaging, audiobook prep, and agent collaboration that stays diffable and human-led.
+This repo demonstrates a practical pattern for chapter-scoped writing, canon grounding, metadata hygiene, review packaging, audiobook prep, and agent collaboration that stays diffable and human-led.
 
 ## What You Get Right Now
 
@@ -69,7 +69,7 @@ It is that chapters, canon, metadata, research, and production support live in s
 - `playbooks/` provides chapter-scoped operator workflows
 - `scripts/` validates, builds, reports, and imports
 - `templates/` gives you reusable starting points
-- `docs/` contains demo, adoption, product, and service guidance
+- `docs/` contains demo and adoption guidance
 
 ## Architecture
 
@@ -214,30 +214,6 @@ Available now in this repo:
 - import utility
 - CI example
 
-## What Is Still Future Direction
-
-The hosted product is not implemented in this starter.
-
-The future hosted layer should sit on top of the repo, not replace it. That direction is documented in `docs/hosted-product-spec.md`.
-
-The current idea is:
-
-- import or upload one chapter at a time
-- ground workflows against canon, strategy, and research
-- trigger chapter-scoped agent runs
-- review regenerate extend refine edit analyze outputs
-- sync accepted changes back to the repository
-
 ## Demo Path
 
 If you want to show this to collaborators, use `docs/demo-walkthrough.md` for a tight 3-5 minute walkthrough.
-
-## Service Layer
-
-This repo is useful on its own. It is not a gated teaser.
-
-If you want hands-on help adapting the pattern to a live manuscript or studio workflow, see `docs/services.md`.
-
-## CloudRaven Labs
-
-CloudRaven Labs is exploring grounded, human-led systems where agents support structure, continuity, packaging, provenance, and production readiness without replacing creative judgment.
