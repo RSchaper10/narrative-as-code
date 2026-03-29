@@ -1,0 +1,30 @@
+name: Workflow example
+description: Share a real-world usage pattern or repo adaptation
+title: "[Workflow]: "
+labels:
+  - workflow
+body:
+  - type: textarea
+    id: context
+    attributes:
+      label: Workflow context
+      description: Describe your project type and team shape.
+    validations:
+      required: true
+  - type: textarea
+    id: structure
+    attributes:
+      label: What you changed
+      description: Which files, folders, or scripts did you adapt?
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: What worked or did not work
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: What the starter could do better

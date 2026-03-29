@@ -67,11 +67,21 @@ Builds a higher-level project snapshot from manuscript stats and continuity data
 
 Splits a monolithic Markdown draft into chapter files and optional chapter metadata.
 
+## `bootstrap-project.py`
+
+Resets the sample project into a fresh working manuscript starter:
+
+- updates project metadata
+- replaces sample chapters with one starter chapter
+- rewrites canon and support files into generic placeholders
+- clears generated build artifacts
+
 ## Usage
 
 ```sh
 python3 scripts/check-setup.py
 python3 scripts/validate-project.py
+python3 scripts/bootstrap-project.py --title "My Novel" --author "Author Name"
 ./scripts/build-manuscript.sh
 ```
 

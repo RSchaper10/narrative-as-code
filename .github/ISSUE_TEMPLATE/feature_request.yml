@@ -1,0 +1,29 @@
+name: Feature request
+description: Suggest an improvement to the open-source starter
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or gap
+      description: What workflow problem are you trying to solve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+      description: Describe the change you would like to see.
+    validations:
+      required: true
+  - type: textarea
+    id: users
+    attributes:
+      label: Who benefits
+      description: Solo authors, editors, small teams, audio-first workflows, etc.
+  - type: textarea
+    id: tradeoffs
+    attributes:
+      label: Tradeoffs or risks

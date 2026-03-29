@@ -17,6 +17,7 @@ This starter is not just a folder layout. It already supports:
 - audiobook support scaffolding
 - operator playbooks for agent and editor workflows
 - import support for monolithic Markdown drafts
+- bootstrap support for replacing the sample with a new project
 - CI-friendly validation and build steps
 
 ## Why This Exists
@@ -123,12 +124,15 @@ python3 -m pip install -r requirements-docx.txt
 
 Install `pandoc` locally if you want EPUB output.
 
+For platform-specific install commands, see `docs/dependency-install.md`.
+
 ## Key Commands
 
 ```sh
 python3 scripts/check-setup.py
 python3 scripts/validate-project.py
 ./scripts/build-manuscript.sh
+python3 scripts/bootstrap-project.py --title "My Novel" --author "Author Name"
 python3 scripts/report-continuity.py
 python3 scripts/import-markdown-manuscript.py --input draft.md --output-dir manuscript/chapters --metadata-out metadata/chapters-import.json
 python3 -m unittest discover -s tests -v
@@ -192,6 +196,19 @@ python3 scripts/import-markdown-manuscript.py \
 
 This utility is intentionally conservative. It gives you structured chapter files and starter metadata so you can finish the migration with judgment instead of hand-copying everything.
 
+## Replacing The Sample With Your Own Project
+
+If you want to turn the sample repo into a fresh working manuscript in place, use:
+
+```sh
+python3 scripts/bootstrap-project.py \
+  --title "My Novel" \
+  --author "Author Name" \
+  --subtitle "A Working Draft for Narrative-as-Code"
+```
+
+This will reset the sample manuscript, canon, metadata, and support files to a clean starter state while preserving the repo structure, scripts, templates, and tests.
+
 ## Adoption Modes
 
 The starter is designed to flex across a few real usage patterns:
@@ -217,3 +234,11 @@ Available now in this repo:
 ## Demo Path
 
 If you want to show this to collaborators, use `docs/demo-walkthrough.md` for a tight 3-5 minute walkthrough.
+
+If you want launch artwork instead of a screenshot, start with `docs/launch-art-prompt.md`.
+
+## Contributing And Support
+
+- contribution guide: `CONTRIBUTING.md`
+- security policy: `SECURITY.md`
+- changelog: `CHANGELOG.md`
